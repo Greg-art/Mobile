@@ -39,13 +39,14 @@
         android:id="@+id/edName"
         android:layout_width="200dp"
         android:layout_height="40dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginBottom="150dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:scaleX="1"
         android:scaleY="1"
         android:textSize="14sp"
         android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -78,11 +79,12 @@
         android:id="@+id/button"
         android:layout_width="132dp"
         android:layout_height="60dp"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="50dp"
         android:onClick="calculaImc"
         android:text="Calculate"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/edHeight" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
